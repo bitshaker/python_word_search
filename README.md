@@ -40,6 +40,35 @@ Make sure you have Python 3 installed, then:
 python3 word_search.py letter_grid.txt words_to_search.txt
 ```
 
+### Command Line Arguments
+
+The program requires exactly 2 arguments:
+
+```bash
+python word_search.py <grid_file> <words_file>
+```
+
+- `<grid_file>`: Path to the text file containing the letter grid (e.g., `letter_grid.txt`)
+- `<words_file>`: Path to the text file containing the list of words to search for (e.g., `words_to_search.txt`)
+
+**Examples:**
+```bash
+# Using default files
+python3 word_search.py letter_grid.txt words_to_search.txt
+
+# Using custom files
+python3 word_search.py my_grid.txt my_words.txt
+
+# Using absolute paths
+python3 word_search.py /path/to/grid.txt /path/to/words.txt
+```
+
+If you provide the wrong number of arguments, you'll see:
+```
+Usage: python word_search.py <grid_file> <words_file>
+Example: python word_search.py letter_grid.txt words_to_search.txt
+```
+
 ## Input File Formats
 
 ### Grid File (letter_grid.txt)
